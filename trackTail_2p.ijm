@@ -58,6 +58,7 @@ function first_trackTail(input, file){
 	selectWindow(orig);
 	run("Close");
 	selectWindow(cropped);
+	run("8-bit");
 	run("Select None");
 	//saveAs("Tiff", dir_output + origname + "-cropped");
 	run("Median...", "radius=2 stack");
@@ -254,6 +255,7 @@ function others_trackTail(input, file, param){
 	selectWindow(orig);
 	run("Close");
 	selectWindow(cropped);
+	run("8-bit");
 	run("Select None");
 	//saveAs("Tiff", dir_output + origname + "-cropped");
 	run("Median...", "radius=2 stack");
